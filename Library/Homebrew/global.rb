@@ -39,6 +39,7 @@ if RUBY_PLATFORM =~ /-linux$/
   # Hack?
   RECOMMENDED_GCC_40 = 0
   RECOMMENDED_GCC_42 = 0
+  MACOS_VERSION = 10.6  # hack :(
 else
   MACOS_FULL_VERSION = `/usr/bin/sw_vers -productVersion`.chomp
   MACOS_VERSION = /(10\.\d+)(\.\d+)?/.match(MACOS_FULL_VERSION).captures.first.to_f
